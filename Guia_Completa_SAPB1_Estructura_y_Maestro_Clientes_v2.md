@@ -31,6 +31,9 @@ El propósito de estos laboratorios es que el estudiante:
 
 Captura de pantalla del menú principal.
 
+![alt text](image.png)
+![alt text](image-1.png)
+
 ---
 
 # Laboratorio 2 - Creación de un Cliente
@@ -48,6 +51,8 @@ Preguntas:
 2. ¿Qué campos son obligatorios?
 3. ¿Qué validaciones realizó SAP?
 
+![alt text](image-2.png)
+
 ---
 
 # Laboratorio 3 - Direcciones del Cliente
@@ -61,7 +66,8 @@ SELECT *
 FROM CRD1
 WHERE CardCode='C-TRAIN-001';
 ```
-
+![alt text](image-3.png)
+![alt text](image-4.png)
 ---
 
 # Laboratorio 4 - Contactos
@@ -74,6 +80,9 @@ FROM OCPR
 WHERE CardCode='C-TRAIN-001';
 ```
 
+![alt text](image-5.png)
+![alt text](image-6.png)
+
 ---
 
 # Laboratorio 5 - Condiciones de Pago
@@ -85,6 +94,7 @@ SELECT CardCode, GroupNum
 FROM OCRD
 WHERE CardCode='C-TRAIN-001';
 ```
+![alt text](image-7.png)
 
 ---
 
