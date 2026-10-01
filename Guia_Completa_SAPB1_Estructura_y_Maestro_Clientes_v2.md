@@ -30,7 +30,7 @@ El propósito de estos laboratorios es que el estudiante:
 ## Evidencia
 
 Captura de pantalla del menú principal.
-
+![alt text](image-2.png)
 ---
 
 # Laboratorio 2 - Creación de un Cliente
@@ -47,7 +47,7 @@ Preguntas:
 1. ¿Cuál fue el CardCode?
 2. ¿Qué campos son obligatorios?
 3. ¿Qué validaciones realizó SAP?
-
+![alt text](image-3.png)
 ---
 
 # Laboratorio 3 - Direcciones del Cliente
@@ -61,7 +61,7 @@ SELECT *
 FROM CRD1
 WHERE CardCode='C-TRAIN-001';
 ```
-
+![alt text](image-4.png)
 ---
 
 # Laboratorio 4 - Contactos
@@ -73,7 +73,7 @@ SELECT *
 FROM OCPR
 WHERE CardCode='C-TRAIN-001';
 ```
-
+![alt text](image-5.png)
 ---
 
 # Laboratorio 5 - Condiciones de Pago
@@ -85,7 +85,8 @@ SELECT CardCode, GroupNum
 FROM OCRD
 WHERE CardCode='C-TRAIN-001';
 ```
-
+![alt text](image-13.png)
+![alt text](image-6.png)
 ---
 
 # Laboratorio 6 - Límite de Crédito
@@ -97,7 +98,7 @@ SELECT CardCode, CardName, CreditLine
 FROM OCRD
 WHERE CardCode='C-TRAIN-001';
 ```
-
+![alt text](image-7.png)
 ---
 
 # Laboratorio 7 - Flujo Comercial Completo
@@ -108,14 +109,19 @@ Flujo:
 Cliente
  ↓
 Cotización (OQUT)
+![alt text](image-8.png)
  ↓
 Pedido (ORDR)
+![alt text](image-9.png)
  ↓
 Entrega (ODLN)
+![alt text](image-10.png)
  ↓
 Factura (OINV)
+![alt text](image-11.png)
  ↓
 Pago (ORCT)
+![alt text](image-12.png)
 ```
 
 ---
@@ -123,6 +129,41 @@ Pago (ORCT)
 # Laboratorio 8 - Trazabilidad
 
 Utilizar Mapa de Relaciones y documentar los documentos vinculados.
+![alt text](image.png)
+1. Datos Generales del Flujo
+    Socio de Negocios: C-TRAIN-001 - Cliente Capacitación   
+    Moneda de la Operación: Peso Mexicano (MXP)   
+    Herramienta Utilizada: Mapa de Relaciones (Relationship Map)
+2. Lista de Documentos Vinculados en la Cadena de TrazabilidadPaso 
+    1: Cotización de VentasNombre en SAP: Sales Quotation (OQUT)
+        Número de Documento: 678   
+        Fecha: 01/10/2026   
+        Importe Total: $76,757.18 MXP   
+        Estado del Documento: Cerrado (Closed)   
+    Paso 2: Orden de Venta / Pedido
+        Nombre en SAP: Sales Order (ORDR)
+        Número de Documento: 669   
+        Fecha: 01/10/2026   
+        Importe Total: $76,757.18 MXP   
+        Estado del Documento: Cerrado (Closed)   
+    Paso 3: Entrega de Mercancía
+        Nombre en SAP: Delivery (ODLN)
+        Número de Documento: 657   
+        Fecha: 01/10/2026   
+        Importe Total: $76,757.18 MXP   
+        Estado del Documento: Cerrado (Closed)   
+    Paso 4: Factura de Clientes
+        Nombre en SAP: A/R Invoice (OINV)
+        Número de Documento: 627   
+        Fecha: 01/10/2026   
+        Importe Total (Con Impuestos): $89,038.33 MXP   
+        Estado del Documento: Cerrado (Closed / Reconciliado con saldo en 0)   
+    Paso 5: Pago Recibido
+        Nombre en SAP: Incoming Payments (ORCT)
+        Número de Documento: 113   
+        Fecha: 01/10/2026   
+        Importe Aplicado: $76,757.18 MXP   
+        Estado del Documento: Reconciliado / Aplicado
 
 ---
 
@@ -135,6 +176,7 @@ SELECT CardCode, CardName
 FROM OCRD
 WHERE CardType='C';
 ```
+![alt text](image-1.png)
 
 Clientes con saldo:
 
@@ -143,6 +185,7 @@ SELECT CardCode, CardName, Balance
 FROM OCRD
 WHERE Balance > 0;
 ```
+![alt text](image-14.png)
 
 Clientes y contactos:
 
@@ -151,7 +194,7 @@ SELECT T0.CardCode,T0.CardName,T1.Name
 FROM OCRD T0
 INNER JOIN OCPR T1 ON T0.CardCode=T1.CardCode;
 ```
-
+![alt text](image-15.png)
 ---
 
 # Laboratorio 10 - Investigación de la Base de Datos
