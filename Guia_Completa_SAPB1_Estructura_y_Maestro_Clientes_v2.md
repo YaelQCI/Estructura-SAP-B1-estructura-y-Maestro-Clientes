@@ -44,8 +44,8 @@ Moneda: MXN
 
 Preguntas:
 
-1. ¿Cuál fue el CardCode?
-2. ¿Qué campos son obligatorios?
+1. ¿Cuál fue el CardCode? C-TRAIN-001
+2. ¿Qué campos son obligatorios? Codigo, nombre, rfc, moneda
 3. ¿Qué validaciones realizó SAP?
 ![alt text](image-3.png)
 ---
@@ -203,11 +203,18 @@ Explorar:
 
 ```sql
 SELECT TOP 100 * FROM OCRD;
+![alt text](image-16.png) 
 SELECT TOP 100 * FROM CRD1;
+![alt text](image-17.png)
 SELECT TOP 100 * FROM OCPR;
+![alt text](image-18.png)
 SELECT TOP 100 * FROM ORDR;
+![alt text](image-19.png)
 SELECT TOP 100 * FROM OINV;
+![alt text](image-20.png)
 SELECT TOP 100 * FROM ORCT;
+![alt text](image-21.png)
+
 ```
 
 ---
@@ -215,14 +222,23 @@ SELECT TOP 100 * FROM ORCT;
 # Proyecto Integrador
 
 1. Crear cliente.
+![alt text](image-22.png)
 2. Configurar direcciones.
+![alt text](image-23.png)
 3. Crear contactos.
+![alt text](image-24.png)
 4. Asignar crédito.
+![alt text](image-25.png)
 5. Crear cotización.
+![alt text](image-26.png)
 6. Crear pedido.
+![alt text](image-27.png)
 7. Crear entrega.
+![alt text](image-28.png)
 8. Facturar.
+![alt text](image-29.png)
 9. Registrar pago.
+![alt text](image-30.png)
 10. Obtener reporte SQL.
 
 Consulta final:
@@ -232,7 +248,7 @@ SELECT CardCode, CardName, Balance, CreditLine
 FROM OCRD
 WHERE CardCode='C-TRAIN-001';
 ```
-
+![alt text](image-31.png)
 ---
 
 # Reto Avanzado
