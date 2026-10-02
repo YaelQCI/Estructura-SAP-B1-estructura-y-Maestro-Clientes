@@ -46,7 +46,7 @@ Preguntas:
 
 1. ¿Cuál fue el CardCode? C-TRAIN-001
 2. ¿Qué campos son obligatorios? Codigo, nombre, rfc, moneda
-3. ¿Qué validaciones realizó SAP?
+3. ¿Qué validaciones realizó SAP? que los campos obligatorios como codigo, nombre, rfc y moneda no estuvieran vacios y que el cardcode no existiera antes
 ![alt text](image-3.png)
 ---
 
@@ -265,3 +265,5 @@ Construir una consulta que muestre:
 - Total vendido del año
 
 Utilizando OCRD, OCTG, OINV, INV1, ORCT y RCT2.
+
+![alt text](image-32.png)
