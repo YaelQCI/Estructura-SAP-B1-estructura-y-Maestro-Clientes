@@ -109,22 +109,22 @@ Flujo:
 Cliente
  ↓
 Cotización (OQUT)
-![alt text](image-8.png)
  ↓
 Pedido (ORDR)
-![alt text](image-9.png)
  ↓
 Entrega (ODLN)
-![alt text](image-10.png)
  ↓
 Factura (OINV)
-![alt text](image-11.png)
  ↓
 Pago (ORCT)
-![alt text](image-12.png)
+
 ```
 
----
+![Cliente](image-8.png)
+![Pedido](image-9.png)
+![Entrega](image-10.png)
+![Factura](image-11.png)
+![Pago](image-12.png)
 
 # Laboratorio 8 - Trazabilidad
 
