@@ -1,5 +1,10 @@
 # Guía Completa: Estructura de SAP Business One y Maestro de Clientes
 
+## Equipo
+- Domínguez García Coral Jazmín 179761
+- Quintanilla Ramírez Yael 181914
+
+
 ## Incluye Hands-on Practice for SAP Business One Logistics Virtual Machine
 
 > Versión ampliada con laboratorios prácticos, ejercicios funcionales, consultas SQL y proyecto integrador.
